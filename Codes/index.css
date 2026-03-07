@@ -1,0 +1,222 @@
+:root {
+  --web-background: #F7F9F8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 100%;
+}
+
+html{
+  background-color: var(--web-background);
+}
+
+.navbar-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 15px;
+}
+
+.navbar-box .logo-part img {
+  width: 90%;
+}
+
+.navbar-box .menu-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem !important;
+}
+
+.navbar-box .menu-part * {
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.navbar-box .menu-part .lang-selection {
+  display: flex;
+  gap: .3rem;
+}
+
+.navbar-box .menu-part .lang-selection img {
+  border-radius: 5px;
+}
+
+.navbar-box .menu-part .lang-selection span {
+  color: rgb(47, 49, 63);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar-box .menu-part .support {
+  color: rgb(47, 49, 63);
+  font-weight: 600;
+  border-radius: 17px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-left: 1.7rem;
+}
+
+.navbar-box .menu-part .support:hover {
+  background-color: #EDF0F0;
+}
+
+.navbar-box .menu-part .registrate {
+  background-color: rgb(47, 49, 63);
+  color: #fff;
+  border-radius: 17px;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.navbar-box .menu-part .registrate:hover {
+  background-color: #414A55;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.hamburger-menu div {
+  height: 2px;
+  width: 15px;
+  background-color: rgb(47, 49, 63);
+}
+
+.download-section {
+  z-index: -2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 148px;
+}
+
+.download-bolt {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 68%;
+}
+
+.download-bolt h2 {
+  color: #191F1C;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.download-bolt p {
+  color: #5E6562;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.download-bolt .application-links {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-bolt .application-links button {
+  font-weight: 600 !important;
+  border-radius: 7px;
+  font-size: 20px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  transition: all .4s ease;
+}
+
+.download-bolt .application-links button.bolt-classic:hover {
+  background-color: #2B8659;
+}
+
+.download-bolt .application-links button.bolt-food:hover {
+  background-color: #d9dddb;
+}
+
+.download-bolt .application-links button.bolt-classic {
+  background-color: rgb(51, 149, 100);
+  color: #fff;
+}
+
+.download-bolt .application-links button.bolt-food {
+  background-color: rgba(1, 34, 18, 0.06);
+}
+section#main{
+  z-index: 10;
+  background-color: var(--web-background);
+}
+.bolt-gallery-section{
+  width: 100%;
+  height: 100%;
+  margin-top: 4rem;
+}
+
+.bolt-gallery-section .gallery-box{
+   width: 100%;
+  height: 500px;
+}
+
+.bolt-gallery-section .gallery-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.bolt-service-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.bolt-service-section .bolt-service-box{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+}
+
+.bolt-service-section .bolt-service-box h2{
+  font-size: 56px;
+  font-weight: 800;
+  color: #191F1C;
+}
+.bolt-service-section .bolt-service-box p{
+  font-size: 20px;
+ color: #5E6562;
+ text-align: center;
+ font-weight: 600;
+}
