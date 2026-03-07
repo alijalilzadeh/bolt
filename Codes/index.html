@@ -8,8 +8,8 @@
   <link rel="icon" type="png" href="../Images/webpageIcon.png">
   <link rel="stylesheet" href="index.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -60,17 +60,89 @@
       </div>
       <div class="bolt-service-section">
         <div class="bolt-service-box">
-          <h2>Xidmətlərimiz</h2>
+          <h3>Xidmətlərimiz</h3>
           <p>Məhsullar və funksiyalar ölkədən asılı olaraq dəyişir. Burada göstərilən bəzi xüsusiyyətlər sənin
             tətbiqində
             mövcud olmaya bilər.</p>
           <div class="service-grid">
-            <div class="rides-box"></div>
-            <div class="boltfood-box"></div>
-            <div class="boltdrive-box"></div>
-            <div class="boltmarket-box"></div>
-            <div class="boltbiznes-box"></div>
-            <div class="boltscooter-box"></div>
+            <div class="rides-box service-content">
+              <div>
+                <h2 class="service-title">Gedişlər</h2>
+                <p class="service-description">Saniyələr ərzində gediş sifariş et, dəqiqələr ərzində yolda ol.</p>
+                <button class="service-button greenbtn">Başla</button>
+              </div>
+              <img src="../Images/Services/boltRide.webp">
+            </div>
+            <div class="boltfood-box service-content">
+              <div>
+                <h2 class="service-title">Çatdırılma</h2>
+                <p class="service-description">Sevimli yeməyin, sürətli çatdırılma.</p>
+                <button class="service-button greenbtn">Bolt Food-a keç</button>
+              </div>
+              <img src="../Images/Services/boltFood.webp">
+            </div>
+            <div class="boltdrive-box service-content">
+              <div>
+                <h2 class="service-title">Avtomobil paylaşımı</h2>
+                <p class="service-description">Yüksək keyfiyyətli avtomobil icarəsi asanlaşdırılıb.</p>
+                <button class="service-button whitebtn">Bolt Drive-a keç</button>
+              </div>
+              <img src="../Images/Services/boltDrive.webp">
+            </div>
+            <div class="boltmarket-box service-content">
+              <div>
+                <h2 class="service-title">Ərzaq və məişət məhsulları</h2>
+                <p class="service-description">Ehtiyac olan hər şey, lazım olduğu zamanda.</p>
+                <button class="service-button darkgreenbtn">Bolt Marketə keç</button>
+              </div>
+              <img src="../Images/Services/boltMarket.webp">
+            </div>
+            <div class="boltbiznes-box service-content">
+              <div>
+                <h2 class="service-title">Biznes</h2>
+                <p class="service-description">Komandan və müştərilərin üçün işgüzar səfərləri idarə et.</p>
+                <button class="service-button whitebtn">Bolt Business-ə keç</button>
+              </div>
+              <img src="../Images/Services/boltBusiness.webp">
+            </div>
+            <div class="boltscooter-box service-content">
+              <div>
+                <h2 class="service-title">Mikromobillik</h2>
+                <p class="service-description">2 təkərli nəqliyyat icarəsi bir toxunuşda.</p>
+                <button class="service-button whitebtn">Ətraflı öyrən</button>
+              </div>
+              <img src="../Images/Services/boltScooter.webp">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="electric-gallery-box">
+        <div class="gallery-box">
+          <img src="../Images/Bolt-Gallery/boltElectric.webp" alt="Electric bolt car">
+        </div>
+      </div>
+      <div class="pagination-description-content">
+        <div class="description-part">
+          <h3>Avtomobil yox, insanyönümlü şəhərlər.</h3>
+          <span>
+            Sektorla bağlı təcrübəmizi və canlı məlumatları paylaşaraq şəhərləri yaxşılaşdırmağa kömək edirik.
+          </span>
+        </div>
+
+        <div class="pagination-part">
+          <div class="pagination-box">
+            <h2>Ən yaxşı təcrübələrin paylaşılması</h2>
+            <p>Yerli orqanlara şəhərlərini daha əlaqəli və yaşanılası etməyə kömək edən fikirlər təqdim edə bilirik.</p>
+            <a href="">Ətraflı öyrən</a>
+          </div>
+          <div class="setup-buttons">
+            <button class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="pagination-bar">
+              <div class="bar-circle"></div>
+              <div class="bar-circle disabled-circle"></div>
+              <div class="bar-circle disabled-circle"></div>
+            </div>
+            <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
       </div>
