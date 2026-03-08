@@ -9,9 +9,6 @@
   font-family: "Inter", sans-serif;
 }
 
-*::selection {
-  background-color: #C2E2CF;
-}
 
 button {
   display: flex;
@@ -124,6 +121,10 @@ html {
   justify-content: center;
   width: 100%;
   margin-top: 148px;
+}
+
+.download-section *::selection{
+  background-color:#C2E2CF ;
 }
 
 .download-bolt {
@@ -268,8 +269,20 @@ section#main {
   border-radius: 7px !important;
   transition: all .4s;
   padding: 20px 15px;
-  cursor: pointer;
+  cursor: grab;
 }
+
+.service-grid .rides-box *::selection{
+  background-color: #074928;
+}
+
+.service-grid .boltfood-box *::selection{
+  background-color: #6FA97A;
+}
+.service-grid .boltdrive-box *::selection{
+  background-color: #043E22;
+}
+
 
 .service-grid .service-content .service-title {
   font-size: 20px;
@@ -288,7 +301,7 @@ section#main {
 .service-grid .service-content .service-button {
   color: #fff;
   border: none;
-  background-color: #2C845D;
+  background-color: #37a171;
   cursor: pointer;
   border-radius: 7px;
   padding: 12px 20px;
@@ -297,6 +310,7 @@ section#main {
   transition: all .4s;
   width: 70%;
   white-space: nowrap;
+  transition: all .2s;
 }
 
 .service-grid .service-content .service-button.whitebtn {
@@ -309,8 +323,17 @@ section#main {
   background-color: #081F14;
 }
 
-.service-grid .service-content .service-button.greenbtn:hover {
+.service-grid .service-content .greenbtn:hover {
   background-color: #2B8659;
+}
+
+.service-grid .service-content .whitebtn:hover {
+  background-color:#F0FFFF;
+  color: #202323;
+}
+
+.service-grid .service-content .darkgreenbtn:hover {
+  background-color:#172F24;
 }
 
 .service-grid .service-content:hover {
@@ -534,4 +557,103 @@ section#main {
 .about-bolt-content .about-box .about-part img{
   width: 100%;
   
+}
+
+.earn-with-bolt-content{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.earn-with-bolt-box{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem ;
+  margin: 6rem 0;
+}
+
+.earn-with-bolt-box .upper-part{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+.earn-with-bolt-box .upper-part h2{
+  color: #191F1C;
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.earn-with-bolt-box .upper-part p{
+ color: #5E6562;
+ font-weight: 600;
+ font-size: 20px;
+}
+
+.earn-with-bolt-box .down-part{
+  width: 100%;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .img-part{
+  width:60%;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .img-part img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part{
+  display: flex;
+  flex-direction:column ;
+  gap: 1rem;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part p:nth-child(4){
+  font-size: 20px;
+  font-weight: 500;
+  color: #636562;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part span{
+  font-size: 16px;
+  font-weight: 600;
+  color: #5E6562;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part h2{
+  font-size: 32px;
+  font-weight: 700;
+  color: #261F1C;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part a{
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(43, 134, 89);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  width: 60%;
+  padding:12px 20px;
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all .2s;
+}
+
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part a:hover{
+  background-color: #18784C;
 }
