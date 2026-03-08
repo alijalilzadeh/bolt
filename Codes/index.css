@@ -9,6 +9,17 @@
   font-family: "Inter", sans-serif;
 }
 
+*::selection {
+  background-color: #C2E2CF;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 .container {
   width: 100%;
 }
@@ -83,6 +94,11 @@ html {
   font-weight: 600;
   padding: 6px 12px;
   font-size: 14px;
+  transition: all .4s ease;
+}
+
+.navbar-box .menu-part .registrate:active {
+  transform: scale(0.95);
 }
 
 .navbar-box .menu-part .registrate:hover {
@@ -200,7 +216,7 @@ section#main {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 6rem;
+  margin: 6rem 0;
 }
 
 .bolt-service-section .bolt-service-box {
@@ -407,24 +423,26 @@ section#main {
   padding: 16px;
   transition: all .4s;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
-.pagination-description-content .setup-buttons button:hover{
-background-color: #2C7F42;
+.pagination-description-content .setup-buttons button:hover {
+  background-color: #2C7F42;
 }
 
-.pagination-description-content .setup-buttons button i{
+.pagination-description-content .setup-buttons button i {
   color: rgba(92, 255, 164, 0.957);
 }
 
-.setup-buttons .pagination-bar{
+.setup-buttons .pagination-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: .7rem;
 }
 
-.setup-buttons .pagination-bar .bar-circle{
+.setup-buttons .pagination-bar .bar-circle {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -432,6 +450,88 @@ background-color: #2C7F42;
   padding: 1px;
 }
 
-.setup-buttons .pagination-bar .bar-circle.disabled-circle{
+.setup-buttons .pagination-bar .bar-circle.disabled-circle {
   background-color: #323A36 !important;
+}
+
+.about-bolt-content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-bolt-content .about-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-bolt-content .about-box .img-content{
+  width: 100%;
+}
+
+.about-bolt-content .about-box .img-content img{
+  width: 100% !important;
+  object-fit: cover;
+}
+.about-bolt-content .about-box .about-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  gap: .8rem;
+  background-color:#2A9C64 ;
+}
+
+.about-bolt-content .about-box .about-part .main-description{
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 40%;
+}
+
+.about-bolt-content .about-box .about-part h3{
+  color: #AEDDC7;
+  font-size: 24px;
+}
+.about-bolt-content .about-box .about-part h2{
+  color: #ECEEED;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-bolt-content .about-box .about-part p{
+  color: #ECEEED;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-bolt-content .about-box .about-part a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: rgb(221, 255, 233);
+  transition: all .2s ease;
+  border-radius: 6px;
+  padding: 12px 0;
+}
+
+.about-bolt-content .about-box .about-part a:hover{
+  background-color:#F0FFFF ;
+  color: #202323;
+}
+
+.about-bolt-content .about-box .about-part img{
+  width: 100%;
+  
 }
