@@ -123,8 +123,8 @@ html {
   margin-top: 148px;
 }
 
-.download-section *::selection{
-  background-color:#C2E2CF ;
+.download-section *::selection {
+  background-color: #C2E2CF;
 }
 
 .download-bolt {
@@ -272,14 +272,15 @@ section#main {
   cursor: grab;
 }
 
-.service-grid .rides-box *::selection{
+.service-grid .rides-box *::selection {
   background-color: #074928;
 }
 
-.service-grid .boltfood-box *::selection{
+.service-grid .boltfood-box *::selection {
   background-color: #6FA97A;
 }
-.service-grid .boltdrive-box *::selection{
+
+.service-grid .boltdrive-box *::selection {
   background-color: #043E22;
 }
 
@@ -328,12 +329,12 @@ section#main {
 }
 
 .service-grid .service-content .whitebtn:hover {
-  background-color:#F0FFFF;
+  background-color: #F0FFFF;
   color: #202323;
 }
 
 .service-grid .service-content .darkgreenbtn:hover {
-  background-color:#172F24;
+  background-color: #172F24;
 }
 
 .service-grid .service-content:hover {
@@ -477,7 +478,7 @@ section#main {
   background-color: #323A36 !important;
 }
 
-.about-bolt-content{
+.about-bolt-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -485,7 +486,7 @@ section#main {
   justify-content: center;
 }
 
-.about-bolt-content .about-box{
+.about-bolt-content .about-box {
   width: 100%;
   height: 100%;
   display: flex;
@@ -494,15 +495,16 @@ section#main {
   justify-content: center;
 }
 
-.about-bolt-content .about-box .img-content{
+.about-bolt-content .about-box .img-content {
   width: 100%;
 }
 
-.about-bolt-content .about-box .img-content img{
+.about-bolt-content .about-box .img-content img {
   width: 100% !important;
   object-fit: cover;
 }
-.about-bolt-content .about-box .about-part{
+
+.about-bolt-content .about-box .about-part {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,135 +512,141 @@ section#main {
   width: 100%;
   text-align: center;
   gap: .8rem;
-  background-color:#2A9C64 ;
+  background-color: #2A9C64;
 }
 
-.about-bolt-content .about-box .about-part .main-description{
+.about-bolt-content .about-box .about-part .main-description {
   margin: 4rem 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 2rem;
-  width: 40%;
+  width: 60%;
 }
 
-.about-bolt-content .about-box .about-part h3{
+.about-bolt-content .about-box .about-part h3 {
   color: #AEDDC7;
   font-size: 24px;
 }
-.about-bolt-content .about-box .about-part h2{
+
+.about-bolt-content .about-box .about-part h2 {
   color: #ECEEED;
   font-size: 80px;
   font-weight: 700;
   line-height: 1;
 }
 
-.about-bolt-content .about-box .about-part p{
+.about-bolt-content .about-box .about-part p {
   color: #ECEEED;
   font-size: 20px;
   font-weight: 600;
 }
 
-.about-bolt-content .about-box .about-part a{
+.about-bolt-content .about-box .about-part a {
   text-decoration: none;
   color: #000;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 18px;
   background-color: rgb(221, 255, 233);
   transition: all .2s ease;
   border-radius: 6px;
   padding: 12px 0;
+  width: 20%;
+  text-align: center;
+  font-size: 20px;
 }
 
-.about-bolt-content .about-box .about-part a:hover{
-  background-color:#F0FFFF ;
+.about-bolt-content .about-box .about-part a:hover {
+  background-color: #F0FFFF;
   color: #202323;
 }
 
-.about-bolt-content .about-box .about-part img{
+.about-bolt-content .about-box .about-part img {
   width: 100%;
-  
+
 }
 
-.earn-with-bolt-content{
+.earn-with-bolt-content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.earn-with-bolt-box{
+.earn-with-bolt-box {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 2rem ;
+  gap: 4rem;
   margin: 6rem 0;
 }
 
-.earn-with-bolt-box .upper-part{
-display: flex;
-flex-direction: column;
-gap: 1rem;
+.earn-with-bolt-box .upper-part {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.earn-with-bolt-box .upper-part h2{
+.earn-with-bolt-box .upper-part h2 {
   color: #191F1C;
   font-weight: 700;
   font-size: 56px;
 }
 
-.earn-with-bolt-box .upper-part p{
- color: #5E6562;
- font-weight: 600;
- font-size: 20px;
+.earn-with-bolt-box .upper-part p {
+  color: #5E6562;
+  font-weight: 600;
+  font-size: 20px;
 }
 
-.earn-with-bolt-box .down-part{
+.earn-with-bolt-box .down-part {
   width: 100%;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box{
+.earn-with-bolt-box .down-part .register-as-worker-box {
   display: flex;
-  gap: 3rem;
+  gap: 6rem;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .img-part{
-  width:60%;
+.earn-with-bolt-box .down-part .register-as-worker-box .img-part {
+  width: 60%;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .img-part img{
+.earn-with-bolt-box .down-part .register-as-worker-box .img-part img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part{
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part {
   display: flex;
-  flex-direction:column ;
+  flex-direction: column;
   gap: 1rem;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part p:nth-child(4){
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part p:nth-child(4) {
   font-size: 20px;
   font-weight: 500;
   color: #636562;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part span{
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part span {
   font-size: 16px;
   font-weight: 600;
   color: #5E6562;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part h2{
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part h2 {
   font-size: 32px;
   font-weight: 700;
   color: #261F1C;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part a{
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part a {
   text-decoration: none;
   color: #fff;
   background-color: rgb(43, 134, 89);
@@ -647,13 +655,187 @@ gap: 1rem;
   justify-content: center;
   border-radius: 9px;
   width: 60%;
-  padding:12px 20px;
+  padding: 12px 20px;
   font-size: 20px;
   font-weight: 600;
   white-space: nowrap;
   transition: all .2s;
 }
 
-.earn-with-bolt-box .down-part .register-as-worker-box .description-part a:hover{
+.earn-with-bolt-box .down-part .register-as-worker-box .description-part a:hover {
   background-color: #18784C;
+}
+
+.earn-with-bolt-box::selection {
+  background-color: #C2E2CF;
+}
+
+.about-bolt-content::selection {
+  background-color: #24B46E;
+}
+
+.latest-features-content {
+  width: 100% !important;
+  background-color: #0E1010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.latest-features-content .latest-features-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 58%;
+  padding: 128px 24px 88px 24px;
+}
+
+.latest-features-content .latest-features-box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #A5ADAA;
+}
+
+.latest-features-content .latest-features-box h2 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #ECEEED;
+}
+
+.latest-features-content .latest-features-box p {
+  font-size: 20px;
+  color: #A5ADAA;
+  font-weight: 600;
+}
+
+.latest-features-content .features-img {
+  width: 100% !important;
+  margin-bottom: 128px;
+}
+
+.latest-features-content .features-img img {
+  width: 100% !important;
+  object-fit: cover;
+}
+
+.latest-features-content .download-our-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.latest-features-content .download-our-apps h2 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ECEEED;
+}
+
+.latest-features-content .download-our-apps p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #A5ADAA;
+}
+
+.latest-features-content .download-our-apps .departures-delivery-content{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px 88px 24px;
+  margin-top: 128px;
+
+}
+
+.latest-features-content .download-our-apps .departures-delivery-content .img-part{
+  width: 30%;
+  display: flex;
+}
+
+.latest-features-content .download-our-apps .departures-delivery-content .img-part img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.departures-delivery-content .description-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.departures-delivery-content .description-part .small-navbar{
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+
+}
+
+.departures-delivery-content .description-part .navbar-titles{
+  display: flex;
+  gap: 1rem;
+  padding: 0 10px;
+}
+
+.departures-delivery-content .description-part .navbar-titles span{
+  cursor: pointer;
+  color:#ECEEE7 ;
+  font-weight: 500;
+  padding: 4px 6px;
+  transition: all .2s;
+  border-radius: 5px ;
+}
+
+.departures-delivery-content .description-part .small-navbar span:hover{
+background-color: #1B211F;
+}
+
+.departures-delivery-content .description-part .lines{
+  display: flex;
+}
+.departures-delivery-content .description-part .lines .line{
+  border-bottom: 3px solid #229c65;
+}
+
+.departures-delivery-content .description-part .lines .left-line{
+  width:70px;
+}
+
+.departures-delivery-content .description-part .lines .right-line{
+  border-bottom: 3px solid #232725;
+  width:90px;
+
+}
+
+.departures-delivery-content .description-part .navbar-title{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.departures-delivery-content .description-part .navbar-p{
+  font-size: 20px;
+}
+
+.departures-delivery-content .description-part button{
+  border: none;
+  width: 30%;
+  background-color: #00965A;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 0;
+  font-size: 18px;
+  transition: all .2s;
+}
+
+.departures-delivery-content .description-part button:hover{
+background-color:#18784C ;
 }
