@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bolt xidmətlərini kəşf et | Hamısı bir arada nəqliyyat tətbiqi | Bolt </title>
+  <title>Explore Bolt services | The all-in-one mobility app | Bolt </title>
   <link rel="icon" type="png" href="../Images/webpageIcon.png">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="navbar.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -133,17 +134,17 @@
 
         <div class="pagination-part">
           <div class="pagination-box">
-            <h2>Sharing best practices</h2>
-            <p>We’re able to provide insights that help local authorities make their cities more connected and liveable.
+            <h2 class="pagination-title">Sharing best practices</h2>
+            <p class="pagination-description">We’re able to provide insights that help local authorities make their cities more connected and liveable.
             </p>
             <a href="">Learn more</a>
           </div>
           <div class="setup-buttons">
-            <button disabled class="prev-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="prev-btn disabled"><i class="fa-solid fa-arrow-left"></i></button>
             <div class="pagination-bar">
               <div class="bar-circle"></div>
-              <div class="bar-circle disabled-circle"></div>
-              <div class="bar-circle disabled-circle"></div>
+              <div class="bar-circle "></div>
+              <div class="bar-circle "></div>
             </div>
             <button class="next-btn"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
@@ -372,6 +373,38 @@
       </div>
     </section>
   </div>
+
+  <script>
+    const slider = document.querySelector(".service-grid");
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener("mousedown", (e) => {
+      isDown = true;
+      slider.classList.add("active");
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+
+    slider.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+
+    slider.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>

@@ -25,94 +25,7 @@ html {
   background-color: var(--web-background);
 }
 
-.navbar-section {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.navbar-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  padding: 15px;
-}
-
-.navbar-box .logo-part img {
-  width: 90%;
-}
-
-.navbar-box .menu-part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.7rem !important;
-}
-
-.navbar-box .menu-part * {
-  cursor: pointer;
-  transition: all .4s ease;
-}
-
-.navbar-box .menu-part .lang-selection {
-  display: flex;
-  gap: .3rem;
-}
-
-.navbar-box .menu-part .lang-selection img {
-  border-radius: 5px;
-}
-
-.navbar-box .menu-part .lang-selection span {
-  color: rgb(47, 49, 63);
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.navbar-box .menu-part .support {
-  color: rgb(47, 49, 63);
-  font-weight: 600;
-  border-radius: 17px;
-  padding: 6px 12px;
-  font-size: 14px;
-  margin-left: 1.7rem;
-}
-
-.navbar-box .menu-part .support:hover {
-  background-color: #EDF0F0;
-}
-
-.navbar-box .menu-part .registrate {
-  background-color: rgb(47, 49, 63);
-  color: #fff;
-  border-radius: 17px;
-  font-weight: 600;
-  padding: 6px 12px;
-  font-size: 14px;
-  transition: all .4s ease;
-}
-
-.navbar-box .menu-part .registrate:active {
-  transform: scale(0.95);
-}
-
-.navbar-box .menu-part .registrate:hover {
-  background-color: #414A55;
-}
-
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-}
-
-.hamburger-menu div {
-  height: 2px;
-  width: 15px;
-  background-color: rgb(47, 49, 63);
-}
 
 .download-section {
   top: 0;
@@ -248,17 +161,15 @@ section#main {
 
 .service-grid {
   width: 100% !important;
-  height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 1rem;
   padding: 0 2rem;
-  flex-wrap: wrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .service-grid .service-content {
-  width: 370px !important;
+  width: 400px ;
   height: 700px;
   position: relative;
   display: flex;
@@ -270,6 +181,15 @@ section#main {
   transition: all .4s;
   padding: 20px 15px;
   cursor: grab;
+  flex: 0 0 400px; 
+}
+
+.service-grid::-webkit-scrollbar{
+  display:none;
+}
+
+.service-grid{
+  -webkit-overflow-scrolling: touch;
 }
 
 .service-grid .rides-box *::selection {
@@ -435,6 +355,25 @@ section#main {
   justify-content: space-between;
 }
 
+.prev-btn.disabled{
+ pointer-events:none;
+ border: 1px solid rgb(81,86,84) !important;
+}
+
+.prev-btn.disabled i{
+  color:  rgb(81,86,84) !important;
+}
+
+.next-btn.disabled{
+ pointer-events:none;
+ border: 1px solid rgb(81,86,84) !important;
+}
+
+.next-btn.disabled i{
+  color:  rgb(81,86,84) !important;
+}
+
+
 .pagination-box h2 {
   font-size: 32px;
   color: #ECEEED;
@@ -447,8 +386,11 @@ section#main {
   padding: 16px;
   transition: all .4s;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-description-content .setup-buttons button:hover {
@@ -474,9 +416,9 @@ section#main {
   padding: 1px;
 }
 
-.setup-buttons .pagination-bar .bar-circle.disabled-circle {
+/* .setup-buttons .pagination-bar .bar-circle.disabled-circle {
   background-color: #323A36 !important;
-}
+} */
 
 .about-bolt-content {
   width: 100%;
@@ -731,6 +673,23 @@ section#main {
   gap: 1rem;
 }
 
+.latest-features-content .download-our-apps.status{
+  animation: closingAndOpening .2s ease ;
+
+}
+
+@keyframes closingAndOpening{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: .5;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
 .latest-features-content .download-our-apps h2 {
   font-size: 56px;
   font-weight: 700;
@@ -788,11 +747,14 @@ section#main {
   cursor: pointer;
   color:#ECEEE7 ;
   font-weight: 500;
-  padding: 4px 6px;
+  padding: 6px;
   transition: all .2s;
-  border-radius: 5px ;
+  border-radius: 6px ;
+  font-size: 14px;
 }
-
+.departures-delivery-content .description-part .navbar-titles span.delivery{
+  color: rgba(243, 255, 250, 0.66);
+}
 .departures-delivery-content .description-part .small-navbar span:hover{
 background-color: #1B211F;
 }
@@ -801,7 +763,7 @@ background-color: #1B211F;
   display: flex;
 }
 .departures-delivery-content .description-part .lines .line{
-  border-bottom: 3px solid #229c65;
+  border-bottom: 2px solid #229c65;
 }
 
 .departures-delivery-content .description-part .lines .left-line{
@@ -809,7 +771,7 @@ background-color: #1B211F;
 }
 
 .departures-delivery-content .description-part .lines .right-line{
-  border-bottom: 3px solid #232725;
+  border-bottom: 2px solid #232725;
   width:90px;
 
 }

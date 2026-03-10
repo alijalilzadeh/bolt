@@ -1,0 +1,88 @@
+.navbar-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 15px;
+}
+
+.navbar-box .logo-part img {
+  width: 90%;
+}
+
+.navbar-box .menu-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.7rem !important;
+}
+
+.navbar-box .menu-part * {
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.navbar-box .menu-part .lang-selection {
+  display: flex;
+  gap: .3rem;
+}
+
+.navbar-box .menu-part .lang-selection img {
+  border-radius: 5px;
+}
+
+.navbar-box .menu-part .lang-selection span {
+  color: rgb(47, 49, 63);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar-box .menu-part .support {
+  color: rgb(47, 49, 63);
+  font-weight: 600;
+  border-radius: 17px;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-left: 1.7rem;
+}
+
+.navbar-box .menu-part .support:hover {
+  background-color: #EDF0F0;
+}
+
+.navbar-box .menu-part .registrate {
+  background-color: rgb(47, 49, 63);
+  color: #fff;
+  border-radius: 17px;
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 14px;
+  transition: all .4s ease;
+}
+
+.navbar-box .menu-part .registrate:active {
+  transform: scale(0.95);
+}
+
+.navbar-box .menu-part .registrate:hover {
+  background-color: #414A55;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.hamburger-menu div {
+  height: 2px;
+  width: 15px;
+  background-color: rgb(47, 49, 63);
+}
